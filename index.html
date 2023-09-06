@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/fav/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/fav/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/fav/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/fav/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/fav/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/fav/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/fav/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/fav/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/fav/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/fav/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/fav/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/fav/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/fav/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="img/fav/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>GOALEM</title>
+  </head>
+
+  <body>
+    <div id="loader" class="loading active">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        class="loading__image"
+      >
+        <path
+          d="M20.1454 8.8457C20.6768 8.9657 21.5511 9.25713 22.4425 9.92571C22.854 10.2343 24.0368 11.16 24.534 12.8571C24.6025 13.1143 25.2025 15.2057 23.9854 17.2629C23.454 18.1543 22.7854 18.7029 22.374 18.9943C22.1683 17.28 21.8425 15.3943 21.3968 13.4057C21.0025 11.76 20.5911 10.2514 20.1454 8.8457Z"
+          fill="#3F2855"
+        />
+        <path
+          d="M6.05405 8.86292C5.28262 11.1772 4.52833 13.9715 4.04833 17.1772C3.67119 19.6801 3.5169 21.9773 3.49976 24.0001C6.19119 24.0001 8.86549 24.0001 11.5569 24.0001C11.5569 22.1658 11.5569 20.3487 11.5569 18.5144C12.0712 18.5144 12.5855 18.5144 13.0998 18.5144C13.0998 20.3487 13.0998 22.1658 13.0998 24.0001C15.7912 24.0001 18.4655 24.0001 21.157 24.0001C21.157 21.9601 21.037 19.6287 20.6598 17.0744C20.1798 13.8344 19.4255 11.0401 18.637 8.74292C18.397 9.36006 17.9341 10.3544 16.9741 11.2115C14.5398 13.3715 10.2884 13.4229 7.80263 11.3144C6.80834 10.4915 6.31119 9.49721 6.05405 8.86292Z"
+          fill="#3F2855"
+        />
+        <path
+          d="M4.59664 8.74292C4.0652 8.86292 3.19092 9.15435 2.29948 9.82292C1.88805 10.1315 0.705193 11.0572 0.208048 12.7544C0.139477 13.0286 -0.460525 15.1201 0.756622 17.1601C1.28805 18.0515 1.95663 18.6001 2.36806 18.8915C2.57377 17.1772 2.89949 15.2915 3.3452 13.3029C3.72235 11.6572 4.15092 10.1486 4.59664 8.74292Z"
+          fill="#3F2855"
+        />
+      </svg>
+    </div>
+
+    <div class="desc">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <a href="javascript:void(0)" class="hide-desc close-desc">
+          <img src="img/arr-l-green.svg" alt="icon" class="arr-l" />
+          <span translate-id="descVac.hideDesc">Сховати подробиці</span>
+        </a>
+        <img
+          src="img/close-green.svg"
+          alt="close"
+          class="close-desc hide-desc-mob"
+        />
+
+        <!-- in-content -->
+        <div class="desc-in">
+          <div class="desc-list">
+            <h2 class="desc-title" id="vacansie-title"></h2>
+            <p id="vacansie-description">
+              <!-- Мы — стартап, который разрабатывает облачный сервис для сферы
+                    affiliate-маркетинга.
+                    Наш продукт – это высоконагруженное SaaS решение, которое помогает игрокам на
+                    рынке
+                    интернет-рекламы автоматизировать и анализировать свой бизнес. -->
+            </p>
+            <div class="need"></div>
+            <div>
+              <span class="desc-subtitle" translate-id="descVac.workCond.header"
+                >Умови роботи:</span
+              >
+              <ul>
+                <li translate-id="descVac.workCond.1">
+                  Хороша заробітна платня, в середньому на 10% вище ринкової;
+                </li>
+                <li translate-id="descVac.workCond.2">
+                  Передбачені бонуси, за успішні результати роботи;
+                </li>
+                <li translate-id="descVac.workCond.3">
+                  Оплата навчання і підвищення кваліфікації;
+                </li>
+                <li translate-id="descVac.workCond.4">
+                  Комфортабельний офіс в центрі Києва;
+                </li>
+                <!-- <li>Хорошая зарплатная вилка, в среднем на 10% выше рыночной;</li>
+                        <li>Предусмотрены бонусы для успешных результатов в работе;</li>
+                        <li>Оплата обучения и повышения квалификации;</li>
+                        <li>Комфортабельный офис в самом центре Киева;</li>
+                        <li>В офисе только команда продукта.</li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="desc-form">
+            <h2 class="desc-title" translate-id="contacts.request">
+              Заявка на співбесіду
+            </h2>
+            <div class="desc-form form">
+              <form
+                class="form-v"
+                action="./php/send-email.php"
+                enctype="multipart/form-data"
+                id="feedback-form2"
+              >
+                <div class="form-input-wrap">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Іван Сірко"
+                    name="name"
+                  />
+                  <label for="name" translate-id="contacts.name"
+                    >Ваше ім'я</label
+                  >
+                </div>
+                <div class="form-input-wrap">
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="ivansirko@example.com"
+                    name="email"
+                  />
+                  <label for="email" translate-id="contacts.email"
+                    >Електронна адреса</label
+                  >
+                </div>
+                <div class="form-input-wrap">
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+38 068 888 77 00"
+                    name="phone"
+                  />
+                  <label for="phone" translate-id="contacts.number"
+                    >Номер телефону</label
+                  >
+                </div>
+
+                <div
+                  class="form-input-wrap input-file-wrap fileUploadInput attachments"
+                  id="upload"
+                  data-counts="1"
+                >
+                  <span class="file-label" translate-id="contacts.resume">
+                    Ваше резюме
+                  </span>
+                  <span class="text-file" translate-id="contacts.resumeSize">
+                    DOC. чи PDF. розміром дo 5мб
+                  </span>
+                  <input
+                    class="upload input-file input-file-d"
+                    id="file"
+                    required="true"
+                    type="file"
+                    accept=".doc,.pdf"
+                    name="attachment[]"
+                  />
+                  <label tabindex="0" for="file" class="btn-file btn-file-d">
+                    <span translate-id="contacts.download">Завантажити</span>
+                    <svg
+                      width="16"
+                      height="12"
+                      viewBox="0 0 16 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5018 11.821H9.91582H9.21945H9.06906V8.35223H10.2035C10.4912 8.35223 10.6612 8.0253 10.4912 7.78991L8.28443 4.73637C8.14385 4.54021 7.85288 4.54021 7.7123 4.73637L5.50552 7.78991C5.33551 8.0253 5.50225 8.35223 5.79322 8.35223H6.92767V11.821H6.77728H6.08092H3.08296C1.36657 11.7262 0 10.1209 0 8.38165C0 7.18182 0.650593 6.13564 1.61504 5.57005C1.52677 5.33139 1.481 5.07638 1.481 4.8083C1.481 3.58231 2.4716 2.59171 3.69759 2.59171C3.9624 2.59171 4.21741 2.63748 4.45607 2.72575C5.16551 1.22186 6.69555 0.178955 8.47405 0.178955C10.7756 0.182224 12.6718 1.94438 12.8876 4.1904C14.6563 4.49444 16 6.13237 16 7.98607C16 9.96727 14.4569 11.6837 12.5018 11.821Z"
+                        fill="#F5F5F5"
+                      />
+                    </svg>
+                  </label>
+                  <!-- <p class="file-return file-return-d"></p> -->
+                </div>
+
+                <button
+                  class="btn-v active btn btn-send-form"
+                  type="submit"
+                  translate-id="contacts.send"
+                >
+                  Відправити
+                </button>
+                <!-- <div class="policy">
+                            Нажимая на кнопку “Отправить”, вы принимаете <a href="javascript:void(0)">условия
+                                пользования</a>
+                            сайтом и <a href="javascript:void(0)">политику конфиденциальности </a>
+                        </div> -->
+              </form>
+
+              <span class="ty ty-v" translate-id="contacts.thankMess">
+                Дякую, ми отримали ваше резюме, й вже почали вивчати його!
+              </span>
+            </div>
+          </div>
+
+          <!-- in-content end-->
+        </div>
+      </div>
+      <div class="footer active footer-desc">
+        <div class="container">
+          <div class="footer-item">
+            <span class="title">Email:</span>
+            <a class="link email-link" href="mailto:hr@goalem.solutions"
+              >hr@goalem.solutions</a
+            >
+            <a class="link-mob" href="mailto:hr@goalem.solutions"
+              ><img src="img/icon-mail-c.svg" alt="icon"
+            /></a>
+          </div>
+          <div class="footer-item">
+            <span class="title" translate-id="footer.phone">Телефон:</span>
+            <a class="link" href="tel:+380500889168">+38 (050) 088-91-68</a>
+            <a class="link-mob" href="tel:+380500889168"
+              ><img src="img/icon-phone-c.svg" alt="icon"
+            /></a>
+          </div>
+          <div class="footer-item">
+            <span class="title" translate-id="footer.office">Офіс:</span>
+            <a
+              href="https://goo.gl/maps/VsBNscV2bbdhghsP8"
+              class="link"
+              target="_blank"
+              translate-id="footer.adress"
+            >
+              Україна, м. Киев, метро Либідська
+            </a>
+            <a
+              href="https://goo.gl/maps/VsBNscV2bbdhghsP8"
+              class="link-mob"
+              target="_blank"
+              ><img src="img/icon-loc-c.svg" alt="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <img src="img/close-icon.svg" alt="close" class="close-menu" />
+        <div class="menu-in">
+          <ul>
+            <li data-index="0" id="one" translate-id="menu.main">ГОЛОВНА</li>
+            <li data-index="1" id="two" translate-id="menu.results">
+              НАШІ РЕЗУЛЬТАТИ
+            </li>
+            <li data-index="2" id="three" translate-id="menu.graph">
+              ГРАФІК РОЗВИТКУ ПРОЕКТУ
+            </li>
+            <li data-index="3" id="four" translate-id="menu.vacancies">
+              ВАКАНСІЇ
+            </li>
+            <li data-index="4" id="five" translate-id="menu.contacts">
+              КОНТАКТИ
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="header">
+        <div class="container">
+          <div class="header-in">
+            <div class="logo">
+              <a href="/">
+                <img src="img/logo.svg" alt="logo" />
+              </a>
+            </div>
+
+            <div class="header__right">
+              <ul class="header__lang-list">
+                <li
+                  class="header__lang-item header__lang-item--active"
+                  data-lang="ua"
+                >
+                  UA
+                </li>
+                <li class="header__lang-item" data-lang="en">EN</li>
+              </ul>
+
+              <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="container"> -->
+      <div id="home-slider" class="responsive-swiper-holder">
+        <!-- <div class="responsive-swiper-shiv"></div> -->
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper container hid">
+            <div class="swiper-slide swiper-slide-one" id="one-slide">
+              <div
+                class="swiper-image"
+                data-swiper-parallax-y="-35%"
+                data-swiper-parallax-duration="600"
+              >
+                <div class="hero mid">
+                  <div class="hero-top">
+                    <h1 translate-id="hero.header">Ми шукаємо розробників!</h1>
+                    <p translate-id="hero.desc">
+                      Ми – продуктова компанія з великими амбіціями. Наш
+                      основний продукт – високонавантажене SaaS рішення, що
+                      допоможе гравцям ринку інтернет реклами автоматизувати й
+                      аналізувати свій бізнес.
+                    </p>
+                    <div class="btn-wrap">
+                      <button
+                        type="button"
+                        class="btn btn-more"
+                        translate-id="hero.more"
+                      >
+                        Докладніше про нас
+                      </button>
+
+                      <button type="button" class="btn-fill btn-send-resume">
+                        <span translate-id="hero.sendResume">
+                          Відправити резюме
+                        </span>
+                        <svg
+                          width="20"
+                          height="10"
+                          viewBox="0 0 20 10"
+                          fill=""
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.7709 4.44699C19.7706 4.44676 19.7704 4.44648 19.7702 4.44625L15.688 0.383747C15.3821 0.0794115 14.8875 0.0805441 14.5831 0.386403C14.2787 0.692224 14.2799 1.18687 14.5857 1.49125L17.3265 4.21875H0.78125C0.349766 4.21875 0 4.56851 0 5C0 5.43148 0.349766 5.78125 0.78125 5.78125H17.3264L14.5857 8.50875C14.2799 8.81312 14.2788 9.30777 14.5831 9.61359C14.8875 9.91949 15.3822 9.92054 15.688 9.61625L19.7702 5.55375C19.7704 5.55351 19.7706 5.55324 19.7709 5.55301C20.0769 5.24761 20.0759 4.75136 19.7709 4.44699Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <img src="img/bg-top.svg" alt="bg" class="hero-bg" />
+                    <img
+                      src="img/hero-bg-mob.svg"
+                      alt="bg"
+                      class="hero-bg-mob"
+                    />
+                  </div>
+                  <div class="hero-cards">
+                    <div id="link-vak-all" class="item link-vak-all">
+                      <div>
+                        <img src="img/see-all-icon.svg" alt="icon" />
+                        <a
+                          href="javascript:void(0)"
+                          class="link-vak-all link-top"
+                        >
+                          <span translate-id="hero.seeAlVac"
+                            >Дивитись всі вакансії</span
+                          >
+                          <img
+                            src="img/arr-r-green.svg"
+                            alt="icon"
+                            class="arr-r"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="scroll-down">
+                    <!-- <img src="../img/arr-down.png" alt="icon"> -->
+                    <span translate-id="hero.scrollDown">Скрольте далі</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-two" id="two-slide">
+              <div
+                class="swiper-image"
+                data-swiper-parallax-y="-35%"
+                data-swiper-parallax-duration="600"
+              >
+                <div class="result content mid">
+                  <h2 class="result-title" translate-id="result.header">
+                    Тестування альфа-версії нашого продукту показало наступні
+                    результати:
+                  </h2>
+                  <div class="result-wrap">
+                    <div class="result-item">
+                      <!-- <div class="result-item-in"> -->
+                      <div class="result-item-left">
+                        <span
+                          class="result-item-title"
+                          translate-id="result.comands"
+                        >
+                          Команди
+                        </span>
+                        <div class="result-graph">
+                          <div class="result-graph-in gr-1">
+                            <div class="num">105</div>
+                            <div class="res"></div>
+                          </div>
+                        </div>
+                        <div class="result-graph-number">
+                          <div class="item">60</div>
+                          <div class="item">70</div>
+                          <div class="item">80</div>
+                          <div class="item">90</div>
+                          <div class="item">100</div>
+                          <div class="item">110</div>
+                          <div class="item">120</div>
+                        </div>
+                      </div>
+                      <div class="result-item-right">
+                        <span class="result-number counter-up">105</span>
+                        <span
+                          class="result-desc"
+                          translate-id="result.connectComands"
+                        >
+                          Підключено команд
+                        </span>
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                    <div class="result-item">
+                      <!-- <div class="result-item-in"> -->
+                      <div class="result-item-left">
+                        <span
+                          class="result-item-title"
+                          translate-id="result.leads"
+                        >
+                          Ліди
+                        </span>
+                        <div class="result-graph">
+                          <div class="result-graph-in gr-2">
+                            <div class="num">67к</div>
+                            <div class="res"></div>
+                          </div>
+                        </div>
+                        <div class="result-graph-number">
+                          <div class="item">40к</div>
+                          <div class="item">50к</div>
+                          <div class="item">60к</div>
+                          <div class="item">70к</div>
+                          <div class="item">80к</div>
+                        </div>
+                      </div>
+                      <div class="result-item-right">
+                        <span class="result-number">
+                          <span class="counter-up">67</span> К
+                        </span>
+                        <span
+                          class="result-desc"
+                          translate-id="result.monthTraf"
+                        >
+                          Щомісячний трафік</span
+                        >
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                    <div class="result-item">
+                      <!-- <div class="result-item-in"> -->
+                      <div class="result-item-left">
+                        <span
+                          class="result-item-title"
+                          translate-id="result.conversion"
+                        >
+                          Конверсія
+                        </span>
+                        <div class="result-graph">
+                          <div class="result-graph-in gr-3">
+                            <div class="num">4%</div>
+                            <div class="res"></div>
+                          </div>
+                        </div>
+                        <div class="result-graph-number">
+                          <div class="item">2.5%</div>
+                          <div class="item">3.5%</div>
+                          <div class="item">4.5%</div>
+                          <div class="item">5.5%</div>
+                          <div class="item">6.5%</div>
+                        </div>
+                      </div>
+                      <div class="result-item-right">
+                        <span class="result-number">
+                          <span translate-id="result.from">З</span>
+                          <span class="counter-up">1.5</span>%
+                          <span translate-id="result.up">до</span>
+                          <span class="counter-up">4</span> %
+                        </span>
+                        <span
+                          class="result-desc"
+                          translate-id="result.increasedConversion"
+                        >
+                          Збільшили конверсію
+                        </span>
+                      </div>
+                      <!-- </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-three" id="three-slide">
+              <div
+                class="swiper-image"
+                data-swiper-parallax-y="-35%"
+                data-swiper-parallax-duration="600"
+              >
+                <div class="develop content mid">
+                  <p class="develop-text" translate-id="develop.header">
+                    Ми пройшли стадію гіпотез й наразі знаходимося на етапі
+                    розробки бета-версії продукту. Нашою альфа-версією продукту
+                    вже зараз користуються наші партнери. Це допомогло нам
+                    залучити інвестиції й продовжити розвиток проекту до
+                    публічних версій. Ми точно знаємо чого не вистачає ринку і
+                    як наш продукт може допомогти.
+                  </p>
+                  <span
+                    class="develop-subtitle"
+                    translate-id="develop.subHeader"
+                  >
+                    Графік розвитку проекту
+                  </span>
+                  <div class="develop-graph-wrap-project">
+                    <div class="develop-status">
+                      <ul>
+                        <li translate-id="develop.stage.secondPublic">
+                          Друга публічна версія
+                        </li>
+                        <li translate-id="develop.stage.firstPublic">
+                          Перша публічна версія
+                        </li>
+                        <li translate-id="develop.stage.beta">
+                          Закрита бета-версія
+                        </li>
+                        <li translate-id="develop.stage.hypotheses">
+                          Стадія гіпотез
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="develop-graph-wrap">
+                      <div class="graph">
+                        <ul>
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                        <div class="stage">
+                          <span
+                            class="title"
+                            translate-id="develop.currentStage"
+                            >Поточний етап:</span
+                          >
+                          <span class="status" translate-id="develop.stage.beta"
+                            >Закрита бета-версія</span
+                          >
+                        </div>
+                        <div class="over-hidden"></div>
+                        <div class="overlay"></div>
+                      </div>
+                      <div class="date">
+                        <ul>
+                          <li>4/4 2021</li>
+                          <li>3/4 2022</li>
+                          <li>2/4 2023</li>
+                          <li>4/4 2023</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="develop-title"
+                    translate-id="develop.secondaHeader"
+                  >
+                    Є три групи гравців ринку, яким цікавий наш продукт:
+                  </span>
+                  <div class="develop-group">
+                    <div class="item">
+                      <img src="img/d-icon-1.svg" alt="icon" />
+                      <span translate-id="develop.advertisers"
+                        >Рекламодавці</span
+                      >
+                    </div>
+                    <div class="item">
+                      <img src="img/d-icon-2.svg" alt="icon" />
+                      <span translate-id="develop.partnerNetworks"
+                        >Партнерські мережі</span
+                      >
+                    </div>
+                    <div class="item">
+                      <img src="img/d-icon-3.svg" alt="icon" />
+                      <span translate-id="develop.webmasters"
+                        >Веб-майстри/команди</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="develop content mid"> -->
+                <!-- <p class="develop-text"> -->
+                <!-- Ми пройшли стадію гіпотез й наразі знаходимося на етапі розробки бета-версії продукту. -->
+                <!-- Нашою альфа-версією продукту вже зараз користуються наші партнери. Це допомогло нам залучити -->
+                <!-- інвестиції й продовжити розвиток проекту до публічних версій. -->
+                <!-- Ми точно знаємо чого не вистачає ринку і як наш продукт може допомогти. -->
+                <!-- </p> -->
+                <!-- <span class="develop-subtitle"> Графік розвитку проекту </span> -->
+                <!-- <div class="develop-graph-wrap-project"> -->
+                <!-- <canvas id="develop-chart" class="develop-graph"></canvas> -->
+                <!-- </div> -->
+                <!-- <div class="develop-graph-wrap-project"> -->
+                <!-- <div class="develop-status"> -->
+                <!-- <ul> -->
+                <!-- <li>Публічна версія</li> -->
+                <!-- <li>Бета-версія</li> -->
+                <!-- <li>Альфа-версія</li> -->
+                <!-- <li>Стадія гіпотез</li> -->
+                <!-- </ul> -->
+                <!-- </div> -->
+                <!-- <div class="develop-graph-wrap"> -->
+                <!-- <div class="graph"> -->
+                <!-- <ul> -->
+                <!-- <li></li> -->
+                <!-- <li></li> -->
+                <!-- <li></li> -->
+                <!--  -->
+                <!-- </ul> -->
+                <!-- <div class="stage"> -->
+                <!-- <span class="title">Поточний етап:</span> -->
+                <!-- <span class="status">Бета-версія</span> -->
+                <!-- </div> -->
+                <!-- <div class="over-hidden"></div> -->
+                <!-- <div class="overlay"></div> -->
+                <!-- </div> -->
+                <!-- <div class="date"> -->
+                <!-- <ul> -->
+                <!-- <li>до 2021</li> -->
+                <!-- <li>2021</li> -->
+                <!-- <li>3/4 2022</li> -->
+                <!-- <li>2/4 2023</li> -->
+                <!-- </ul> -->
+                <!-- </div> -->
+                <!--  -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- <span class="develop-title"> -->
+                <!-- Є три групи учасників ринку, яким цікавий наш продукт: -->
+                <!-- </span> -->
+                <!-- <div class="develop-group"> -->
+                <!-- <div class="item"> -->
+                <!-- <img src="img/d-icon-1.svg" alt="icon" /> -->
+                <!-- <span>Рекламодавці</span> -->
+                <!-- </div> -->
+                <!-- <div class="item"> -->
+                <!-- <img src="img/d-icon-2.svg" alt="icon" /> -->
+                <!-- <span>Партнерські мережі</span> -->
+                <!-- </div> -->
+                <!-- <div class="item"> -->
+                <!-- <img src="img/d-icon-3.svg" alt="icon" /> -->
+                <!-- <span>Веб-мастери/команди</span> -->
+                <!-- </div> -->
+                <!-- </div> -->
+                <!-- </div> -->
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-four" id="four-slide">
+              <div
+                class="swiper-image"
+                data-swiper-parallax-y="-20%"
+                data-swiper-parallax-duration="600"
+              >
+                <div class="vacancies content mid">
+                  <h2 class="vacancies-title" translate-id="vacancies.header">
+                    Кого ми шукаємо?
+                  </h2>
+                  <div class="vacancies-wrap">
+                    <ul class="first"></ul>
+                    <ul class="hide-vac"></ul>
+
+                    <!-- <a href="javascript:void(0)" class="link-show-all-vac"> -->
+                    <!-- Показати всі вакансії -->
+                    <!-- <img src="img/arr-d-green.svg" alt="icon" class="arr-d" /> -->
+                    <!-- </a> -->
+                    <!-- <a href="javascript:void(0)" class="link-hide-all-vac"> -->
+                    <!-- Сховати всі вакансії -->
+                    <!-- <img src="img/arr-d-green.svg" alt="icon" class="arr-d" /> -->
+                    <!-- </a> -->
+                  </div>
+
+                  <h2
+                    class="vacancies-title"
+                    translate-id="vacancies.ourPrincipes"
+                  >
+                    Наші принципи
+                  </h2>
+
+                  <div class="vacancies-bottom">
+                    <p translate-id="vacancies.principesDesc">
+                      У нас все просто. Ми шукаємо цілеспрямованих й
+                      відповідальних. Ми будемо раді бачити тебе в нашій
+                      компанії, якщо:
+                      <!-- У нас все просто. Мы ищем целеустремленных и ответственных. Мы рады
+			видеть тебя в нашей компании если: -->
+                    </p>
+                    <ul class="vacancies-bottom-list">
+                      <li>
+                        <span class="number">1</span>
+                        <span class="text" translate-id="vacancies.principes.1"
+                          >Ти самоорганізований</span
+                        >
+                      </li>
+                      <li>
+                        <span class="number">2</span>
+                        <span class="text" translate-id="vacancies.principes.2"
+                          >Не сидиш на місці, постійно розвиваєшся</span
+                        >
+                      </li>
+                      <li>
+                        <span class="number">3</span>
+                        <span class="text" translate-id="vacancies.principes.3"
+                          >Чесний</span
+                        >
+                      </li>
+                      <li>
+                        <span class="number">4</span>
+                        <span class="text" translate-id="vacancies.principes.4"
+                          >Є професіоналом свого напрямку</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-five" id="five-slide">
+              <div
+                class="swiper-image"
+                data-swiper-parallax-y="-20%"
+                data-swiper-parallax-duration="600"
+              >
+                <div class="contacts content mid">
+                  <div class="contacts-list">
+                    <h2 class="contacts-title" translate-id="contacts.header">
+                      Наші контакти
+                    </h2>
+
+                    <div class="contacts-list-item email-wrap">
+                      <span translate-id="contacts.email"
+                        >Електронна пошта:
+                      </span>
+                      <a href="mailto:hr@goalem.solutions"
+                        >hr@goalem.solutions</a
+                      >
+                    </div>
+                    <div class="contacts-list-item phone-wrap">
+                      <span translate-id="contacts.hrNumber"
+                        >Номер телефону HR-менеджера:
+                      </span>
+                      <a href="tel:+380500889168">+38 (050) 088-91-68</a>
+                    </div>
+                    <div class="contacts-list-item loc-wrap">
+                      <span translate-id="contacts.office">Наш офіс: </span>
+                      <a
+                        href="https://goo.gl/maps/VsBNscV2bbdhghsP8"
+                        target="_blank"
+                        translate-id="contacts.officeAdress"
+                      >
+                        Україна, м. Киев, метро Либідська
+                      </a>
+                    </div>
+                  </div>
+                  <div class="contacts-form">
+                    <h2 class="contacts-title" translate-id="contacts.request">
+                      Заявка на співбесіду
+                    </h2>
+                    <div class="contacts-form form">
+                      <form
+                        class="form-c"
+                        action="./php/send-email.php"
+                        enctype="multipart/form-data"
+                        id="feedback-form"
+                      >
+                        <div class="form-input-wrap">
+                          <input
+                            type="text"
+                            id="name-c"
+                            placeholder="Іван Сірко"
+                            name="name"
+                          />
+                          <label for="name-c" translate-id="contacts.name"
+                            >Ваше ім'я</label
+                          >
+                        </div>
+                        <div class="form-input-wrap">
+                          <input
+                            type="text"
+                            id="email-c"
+                            placeholder="ivansirko@example.com"
+                            name="email"
+                          />
+                          <label for="email-c" translate-id="contacts.email"
+                            >Електронна адреса</label
+                          >
+                        </div>
+                        <div class="form-input-wrap">
+                          <input
+                            type="text"
+                            id="phone-c"
+                            placeholder="+38 068 888 77 00"
+                            name="phone"
+                          />
+                          <label for="phone-c" translate-id="contacts.number"
+                            >Номер телефону</label
+                          >
+                        </div>
+
+                        <div
+                          class="form-input-wrap input-file-wrap fileUploadInput attachments"
+                          id="upload-c"
+                          data-counts="1"
+                        >
+                          <span
+                            class="file-label"
+                            translate-id="contacts.resume"
+                          >
+                            Ваше резюме
+                          </span>
+                          <span
+                            class="text-file"
+                            translate-id="contacts.resumeSize"
+                          >
+                            DOC. чи PDF. розміром дo 5мб
+                          </span>
+                          <input
+                            class="upload input-file input-file-c"
+                            id="file-c"
+                            required="true"
+                            type="file"
+                            accept=".doc,.pdf"
+                            name="attachment[]"
+                          />
+                          <label
+                            tabindex="0"
+                            for="file-c"
+                            class="btn-file btn-file-c"
+                          >
+                            <span translate-id="contacts.download"
+                              >Завантажити</span
+                            >
+                            <svg
+                              width="16"
+                              height="12"
+                              viewBox="0 0 16 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12.5018 11.821H9.91582H9.21945H9.06906V8.35223H10.2035C10.4912 8.35223 10.6612 8.0253 10.4912 7.78991L8.28443 4.73637C8.14385 4.54021 7.85288 4.54021 7.7123 4.73637L5.50552 7.78991C5.33551 8.0253 5.50225 8.35223 5.79322 8.35223H6.92767V11.821H6.77728H6.08092H3.08296C1.36657 11.7262 0 10.1209 0 8.38165C0 7.18182 0.650593 6.13564 1.61504 5.57005C1.52677 5.33139 1.481 5.07638 1.481 4.8083C1.481 3.58231 2.4716 2.59171 3.69759 2.59171C3.9624 2.59171 4.21741 2.63748 4.45607 2.72575C5.16551 1.22186 6.69555 0.178955 8.47405 0.178955C10.7756 0.182224 12.6718 1.94438 12.8876 4.1904C14.6563 4.49444 16 6.13237 16 7.98607C16 9.96727 14.4569 11.6837 12.5018 11.821Z"
+                                fill="#F5F5F5"
+                              />
+                            </svg>
+                          </label>
+                          <!-- <p class="file-return file-return-c"></p> -->
+                        </div>
+
+                        <button
+                          class="btn-cont active btn btn-send-form"
+                          type="submit"
+                          translate-id="contacts.send"
+                        >
+                          Відправити
+                        </button>
+                        <!-- <div class="policy">
+                    Нажимая на кнопку “Отправить”, вы принимаете <a href="javascript:void(0)">условия пользования</a>
+                    сайтом и <a href="javascript:void(0)">политику конфиденциальности </a>
+                </div> -->
+                      </form>
+                      <span class="ty ty-c" translate-id="contacts.thankMess"
+                        >Дякую, ми отримали ваше резюме, й вже почали вивчати
+                        його!</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <div class="footer">
+        <div class="container">
+          <div class="footer-item">
+            <span class="title">Email:</span>
+            <a class="link email-link" href="mailto:hr@goalem.solutions"
+              >hr@goalem.solutions</a
+            >
+            <a class="link-mob" href="mailto:hr@goalem.solutions"
+              ><img src="img/icon-mail-c.svg" alt="icon"
+            /></a>
+          </div>
+          <div class="footer-item">
+            <span class="title" translate-id="footer.phone">Телефон:</span>
+            <a class="link" href="tel:+380500889168">+38 (050) 088-91-68</a>
+            <a class="link-mob" href="tel:+380500889168"
+              ><img src="img/icon-phone-c.svg" alt="icon"
+            /></a>
+          </div>
+          <div class="footer-item">
+            <span class="title" translate-id="footer.office">Офіс:</span>
+            <a
+              href="https://goo.gl/maps/VsBNscV2bbdhghsP8"
+              target="_blank"
+              class="link"
+              translate-id="footer.adress"
+            >
+              Україна, м. Київ, метро Либідська
+            </a>
+            <a
+              href="https://goo.gl/maps/VsBNscV2bbdhghsP8"
+              class="link-mob"
+              target="_blank"
+              ><img src="img/icon-loc-c.svg" alt="icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script> -->
+    <script src="https://unpkg.com/i18next@21.8.16/dist/umd/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/jquery.validate.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
+
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
